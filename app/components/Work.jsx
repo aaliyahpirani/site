@@ -1,25 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { workData, assets } from '@/assets/assets'; // Ensure these are correctly defined
 import Image from 'next/image';
 import { motion } from "motion/react";
 
 const Work = ({ isDarkMode }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false); // To track modal state
+  const [currentProject, setCurrentProject] = useState(null); // Store currently selected project
+
+  const handleModalOpen = (project) => {
+    setCurrentProject(project);
+    setIsModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+    setCurrentProject(null);
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       id='work' className='w-full px-[12%] py-10 scroll-mt-20'>
+      
       <motion.h4
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
         className='text-center mb-2 text-lg font-Ovo'>My portfolio</motion.h4>
+      
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
         className='text-center text-5xl font-Ovo'>What I've done</motion.h2>
+      
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -33,6 +49,7 @@ const Work = ({ isDarkMode }) => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.9 }}
         className='grid grid-cols-auto my-10 gap-5 dark:text-black'>
+        
         {workData.map((project, index) => (
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -40,6 +57,7 @@ const Work = ({ isDarkMode }) => {
             key={index}
             className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group'
             style={{ backgroundImage: `url(${project.bgImage})` }}
+            onClick={() => handleModalOpen(project)}
           >
             <div
               className='bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-4 px-3 flex items-center justify-between duration-500 group-hover:bottom-7'>
@@ -73,24 +91,21 @@ const Work = ({ isDarkMode }) => {
         ))}
       </motion.div>
 
-      {/* <motion.a
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 1.1 }}
-        href=""
-        className='w-max flex items-center justify-center gap-2 text-gray-700 
-            border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20
-             hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover'>
-        Show more
-        <Image
-          src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold}
-          alt="Right arrow"
-          width={16} // Specify dimensions minimally
-          height={16} // Specify dimensions minimally
-          className='w-4 mt-1'
-        />
-      </motion.a> */}
-
+      {/* Modal */}
+      {isModalOpen && currentProject && (
+        <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center z-50 backdrop-blur-sm">
+          <div className="bg-white p-6 rounded-lg max-w-lg w-full relative">
+            <h2 className="text-3xl font-semibold text-center mb-4 dark:text-black">{currentProject.title}</h2>
+            <p className="text-sm text-gray-700 mb-6 text-center">{currentProject.modalDescription}</p>
+            <button
+              onClick={handleModalClose}
+              className="absolute top-2 right-2 bg-gray-200 rounded-full p-2 text-gray-700 hover:bg-gray-300"
+            >
+              <Image src={assets.close_black} alt="Close" width={20} height={20} />
+            </button>
+          </div>
+        </div>
+      )}
     </motion.div>
   );
 };

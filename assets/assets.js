@@ -93,32 +93,36 @@ export const workData = [
     {
         title: 'CGEN Aqualens Project',
         description: 'Fullstack web design for water quality testing app',
+        modalDescription: 'Working alongside the University of Toronto Engineers without Borders chapter, I worked with a team to develop a water quality testing app for use in underdeveloped countries. I aided in full stack development, creating key components of the app including the user login page. By creating this app, clean water become more accessible and reliable for those in underdeveloped areas of the world.',
         bgImage: '/cgen.png',
         images: [assets.flutter, assets.python]
     },
     {
         title: 'CSCS Analysis',
         description: 'Statistical analysis of CSCS data set',
+        modalDescription: 'As a final project for my STA130 class, I performed an analysis of the Canadian Social Connection Survey Data, analyzing whether screentime usage during COVID-19 had a direct correlation with life satisfaction, and how this changed after the pandemic. This project was driven by my own experiences during COVID-19 when most activiites were shifted online, and my curiosity about how this changed as activities resumed back to normal. In this project, I used python libraries like scikit-learn, numpy and scipy.stats to perfrom statistical analyses. ',
         bgImage: '/stats.webp',
         images: [assets.scipy, assets.numpy]
     },
     {
         title: 'SUMO Robot',
         description: 'Built and designed a SUMO Robot for competition',
+        modalDescription: 'In this project, I designed a SUMO robot from scratch, using SOLIDWORKS to develop the design under the given constraints. This was 3D printed, and after assembly I used arduino programming to code the functions of the robot. It is set for an intramural competition at UofT in February 2025.',
         bgImage: '/sumo.png',
         images: [assets.solidworks, assets.arduino]
     }
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Air Cadet League', description: 'As a WO2 at my squadron, I oversaw 200+ cadets, leading parades, teaching, and guiding junior cadets in leadership. I won Silver in the Calgary biathlon regional championship and participated in the drill and marksmanship teams. I also earned both the Glider and Power pilot scholarships through the air cadet program, earning my wings!', 
+    { icon: assets.web_icon, title: 'Air Cadet League', date: 'Sept 2018 - Aug 2024', description: 'As a WO2 at my squadron, I oversaw 200+ cadets, leading parades, teaching, and guiding junior cadets in leadership. I won Silver in the Calgary biathlon regional championship and participated in the drill and marksmanship teams. I also earned both the Glider and Power pilot scholarships through the air cadet program, earning my wings!', 
         modalDescription: 'As a WO2 at my squadron, I regularly oversaw more than 200 cadets, calling commands on parade, teaching lessons, and providing guidance to allow junior cadets to grow in their leadership capabilities throughout the program. I was a regular participant in all the programs air cadets offered, winning Silver in the Calgary biathlon regional championship, and participating in the drill team and marksmanship team. I was also awarded both the Glider pilot and Power pilot scholarships through the air cadet program, earning my wings!', link: '' },
-    { icon: assets.mobile_icon, title: 'STEMinmotion', description: 'In 2021, I co-founded STEMinmotion, a non-profit that provides equal STEM education opportunities. What began with online tutoring has expanded globally to Edmonton, Vancouver, and Toronto, reaching over a thousand students through in-person events and partnerships, including with Telus Spark.', 
+    { icon: assets.mobile_icon, title: 'STEMinmotion', date: 'Dec 2021 - June 2024', description: 'In 2021, I co-founded STEMinmotion, a non-profit that provides equal STEM education opportunities. What began with online tutoring has expanded globally to Edmonton, Vancouver, and Toronto, reaching over a thousand students through in-person events and partnerships, including with Telus Spark.', 
         modalDescription: 'In 2021, I co-founded STEMinmotion, a non-profit dedicated to providing equal opportunities for STEM education, regardless of financial background. What started with online tutoring and information sharing has grown into a global initiative, expanding to Edmonton, Vancouver, and Toronto. With over a thousand students reached, we create direct impact through in-person events and partnerships, including with Telus Spark. Seeing the positive effects on students and communities keeps me motivated to continue making STEM education accessible.', link: '' },
-    { icon: assets.ui_icon, title: 'Math Tutor', description: 'I’ve tutored over 15 students in the Alberta and IB curricula, tailoring my approach to each student’s needs. I focus on providing personalized lessons at affordable rates to help students master concepts and build confidence in achieving their academic goals.',
-        modalDescription: 'I have tutored over 15 students in both the Alberta and IB curricula, adapting my teaching approach to suit each student’s individual needs. Whether they needed help mastering complex concepts or gaining confidence in their skills, I focused on providing personalized lessons at affordable rates, ensuring that everyone has the opportunity to achieve their academic goals with the support they need.', link: '' },
-    { icon: assets.graphics_icon, title: 'Research Associate', description: 'At the University of Calgary, I worked with Dr. Julio Garcia Flores on research into hemodynamic forces as a biomarker for heart disease in rTOF patients.  The research was accepted into the ISMRM 2024 conference in Singapore and highlighted the potential of intracardiac forces for early heart disease detection.', 
+    { icon: assets.graphics_icon, title: 'Research Associate', date: 'May 2023 - Apr 2024', description: 'At the University of Calgary, I worked with Dr. Julio Garcia Flores on research into hemodynamic forces as a biomarker for heart disease in rTOF patients.  The research was accepted into the ISMRM 2024 conference in Singapore and highlighted the potential of intracardiac forces for early heart disease detection.', 
         modalDescripton: 'At the University of Calgary, I worked with Dr. Julio Garcia Flores on an investigation into hemodynamic forces as a biomarker for heart disease in rTOF patients with regards to age and sex. We compared the cohort to healthy controls, concluding that there were significant differences in all three axes of the heart. My research was accepted into ISMRM conference 2024 in Signapore, and demonstrated the viability of intracardiac forces for early detection of heart disease in the future. ',link: '' },
+    { icon: assets.ui_icon, title: 'Math Tutor', date: 'Feb 2021 - Present', description: 'I’ve tutored over 15 students in the Alberta and IB curricula, tailoring my approach to each student’s needs. I focus on providing personalized lessons at affordable rates to help students master concepts and build confidence in achieving their academic goals.',
+        modalDescription: 'I have tutored over 15 students in both the Alberta and IB curricula, adapting my teaching approach to suit each student’s individual needs. Whether they needed help mastering complex concepts or gaining confidence in their skills, I focused on providing personalized lessons at affordable rates, ensuring that everyone has the opportunity to achieve their academic goals with the support they need.', link: '' }
+    ,
 ]
 
 export const infoList = [
