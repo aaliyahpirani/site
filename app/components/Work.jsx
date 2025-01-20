@@ -94,16 +94,37 @@ const Work = ({ isDarkMode }) => {
       {/* Modal */}
       {isModalOpen && currentProject && (
         <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center z-50 backdrop-blur-sm">
-          <div className="bg-white p-6 rounded-lg max-w-lg w-full relative">
-            <h2 className="text-3xl font-semibold text-center mb-4 dark:text-black">{currentProject.title}</h2>
-            <p className="text-sm text-gray-700 mb-6 text-center">{currentProject.modalDescription}</p>
+          <motion.div
+            className="bg-white p-6 rounded-lg max-w-lg w-full relative"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <motion.h2
+              className="text-3xl font-semibold text-center mb-4 dark:text-black"
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              {currentProject.title}
+            </motion.h2>
+
+            <motion.p
+              className="text-sm text-gray-700 mb-6 text-center"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
+              {currentProject.modalDescription}
+            </motion.p>
+
             <button
               onClick={handleModalClose}
               className="absolute top-2 right-2 bg-gray-200 rounded-full p-2 text-gray-700 hover:bg-gray-300"
             >
               <Image src={assets.close_black} alt="Close" width={20} height={20} />
             </button>
-          </div>
+          </motion.div>
         </div>
       )}
     </motion.div>
