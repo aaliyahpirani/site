@@ -134,7 +134,7 @@ export const infoList = [
         { text: 'TD Scholarship for Community Leadership', bold: true },
         { text: '$70,000 scholarship awarded to 20 Canadian students in recognition of outstanding community leadership', bold: false },
         {text: 'Howard Ferguson Admission Scholarship', bold: true},
-        { text: 'Cumulative scholarship of $12,000 awarded by the University College to outstanding students from outside Ontario.', bold: false}
+        { text: 'Cumulative scholarship of $12,000 awarded by the University College to outstanding students from outside Ontario', bold: false}
 
       ]},
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Activities', description: [
