@@ -127,7 +127,7 @@ export const serviceData = [
 
 export const infoList = [
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: [
-        { text: 'Sept 2024 - Apr 2028', bold: true },
+        { text: 'Sept 2024 - Apr 2028, cGPA: 4.0', bold: true },
         { text: 'HBsc. in Computer Science at the University of Toronto', bold: false },
       ] },
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Awards', description: [
