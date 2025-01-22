@@ -127,8 +127,8 @@ export const serviceData = [
 
 export const infoList = [
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: [
-        { text: 'Sept 2024 - Apr 2028, cGPA: 4.0', bold: true },
-        { text: 'HBsc. in Computer Science at the University of Toronto', bold: false },
+        { text: 'Sept 2024 - Apr 2028,  cGPA: 4.0', bold: true },
+        { text: 'Honours BSc. in Computer Science at the University of Toronto', bold: false },
       ] },
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Awards', description: [
         { text: 'TD Scholarship for Community Leadership', bold: true },
@@ -140,7 +140,7 @@ export const infoList = [
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Activities', description: [
         { text: 'Computer Science Student Union', bold: true },
         { text: 'General Council, External Relations Team', bold: false },
-        {text: 'Youreka Canada, Toronto', bold: true},
+        {text: 'Youreka Canada, Toronto Chapter ', bold: true},
         {text: 'Undergraduate Research Lead', bold: false }
       ]}
 ];
