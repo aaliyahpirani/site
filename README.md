@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![Analytics](https://github.com/vercel/analytics/blob/main/.github/banner.png)
 
-## Getting Started
+<div align="center"><strong>Vercel Web Analytics</strong></div>
+<div align="center">Privacy-friendly, real-time traffic insights</div>
+<br />
+<div align="center">
+<a href="https://vercel.com/analytics">Website</a>
+<span> · </span>
+<a href="https://vercel.com/docs/concepts/analytics/package">Documentation</a>
+<span> · </span>
+<a href="https://twitter.com/vercel">Twitter</a>
+</div>
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+`@vercel/analytics` allows you to track page views and custom events in your Next.js app or any other website that is deployed to Vercel.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+All page views are automatically tracked in your app.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+This package does **not** track data in development mode.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Quickstart
 
-## Learn More
+1. Enable Vercel Web Analytics for a project in the [Vercel Dashboard](https://vercel.com/dashboard).
+2. Add the `@vercel/analytics` package to your project
+3. Inject the Analytics script to your app
 
-To learn more about Next.js, take a look at the following resources:
+   - If you are using **Next.js** or **React**, you can use the `<Analytics />` component to inject the script into your app.
+   - To add the tracking script for other frameworks, use the `inject` function.
+   - If you want to use Vercel Web Analytics on a static site without npm, follow the instructions in the [documentation](https://vercel.com/docs/analytics/quickstart).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Deploy your app to Vercel and see data flowing in.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Documentation
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Find more details about this package in our [documentation](https://vercel.com/docs/analytics/quickstart).
