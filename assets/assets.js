@@ -91,6 +91,13 @@ export const assets = {
 
 export const workData = [
     {
+        title: 'MemoryLane',
+        description: 'An app to administer reminiscence therapy to dementia patients',
+        modalDescription: 'During the QHacks event, my team and I designed Memory Lane, a website application designed to administer reminiscence therapy to dementia patients without the need for in-home care, greatly reducing the cost required for this therapy. I aided in back-end development, prompt engineering ChatGPT and Dall-E to make this project successful. By generating personalized emotional narratives and AI-created images, Memory Lane strengthens the emotional connections between patients and their memories.',
+        bgImage: '/memorylane.png',
+        images: [assets.flutter, assets.python]
+    },
+    {
         title: 'CGEN Aqualens Project',
         description: 'Fullstack web design for water quality testing app',
         modalDescription: 'Working alongside the University of Toronto Engineers without Borders chapter, I helped to develop a water quality testing app for use in underdeveloped countries. I aided in full stack development, creating key components of the app including the user login page. By creating this app, clean water become more accessible and reliable for those in underdeveloped areas of the world.',
